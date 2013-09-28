@@ -1,0 +1,7 @@
+﻿<Window x:Class="Algorithm.OneC.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+	<Canvas Background="Gray" Name="canvasArea">
+	</Canvas>
+</Window>
