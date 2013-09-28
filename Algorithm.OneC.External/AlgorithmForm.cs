@@ -12,6 +12,7 @@ namespace Algorithm.OneC.External
 	public class AlgorithmForm: IAlgorithmForm
     {
 	    private MainWindow _window;
+
 		public void Show()
 		{
 			_window = new MainWindow();
