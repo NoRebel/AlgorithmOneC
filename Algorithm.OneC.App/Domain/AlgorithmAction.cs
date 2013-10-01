@@ -44,7 +44,7 @@ namespace Algorithm.OneC.App.Domain
 
 			 // Add Rectangle to Canvas
 
-			
+			shape.AllowDrop = true;
 
 			return shape;
 		}

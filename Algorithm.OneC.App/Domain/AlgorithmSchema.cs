@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Shapes;
 
 namespace Algorithm.OneC.App.Domain
 {
@@ -45,8 +46,11 @@ namespace Algorithm.OneC.App.Domain
 			//if (refresh)
 			//	Elements = BackGroundElements;
 		}
+		
 
-
-
+		public AlgorithmElement GetAlgorithmElementByUIElement(Shape element)
+		{
+			return Elements.FirstOrDefault(c => c.DrawnShape == element);
+		}
 	}
 }

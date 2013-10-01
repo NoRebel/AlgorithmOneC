@@ -13,11 +13,10 @@ namespace Algorithm.OneC.External
     {
 	    private MainWindow _window;
 
-		public void Show()
+		public void ShowForm()
 		{
 			_window = new MainWindow();
-			_window.Show();
-			
+			_window.Show();			
 		}
 
 		public int AddElement(int elementID, int elementType, string elementName, string fName,
@@ -28,5 +27,10 @@ namespace Algorithm.OneC.External
 				actionType, actionRepeat, actionPriority, actionNumber,
 				elementPrevIDs, elementNextIDs, refresh);
 		}
+
+	    public void ClearForm()
+	    {
+		    _window.ClearForm();
+	    }
     }
 }

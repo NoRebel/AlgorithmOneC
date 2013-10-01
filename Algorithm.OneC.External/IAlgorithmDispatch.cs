@@ -11,12 +11,15 @@ namespace Algorithm.OneC.External
 	internal interface IAlgorithmForm
 	{
 		[DispId(1)]
-		void Show();
+		void ShowForm();
 
 		[DispId(2)]
 		int AddElement(int elementID, int elementType, string elementName, string fName,
 		               int actionType, int actionRepeat, int actionPriority, int actionNumber,
 		               int[] elementPrevIDs, int[] elementNextIDs, bool refresh);
+
+		[DispId(3)]
+		void ClearForm();
 	}
 
 	[ComVisible(true)]
